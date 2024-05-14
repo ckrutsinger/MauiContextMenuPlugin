@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cm="https://github.com/jerry08/Plugin.ContextMenuContainer"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="MauiContextMenuPlugin.MainPage">
 
     <ScrollView>
@@ -30,11 +31,11 @@
                         />
                 </cm:ContextMenuContainer.MenuItems>
                 <cm:ContextMenuContainer.Content  >
-                    <Label Text="Tap here to choose" 
+                    <Button Text="Tap here to choose" 
                            FontSize="Medium"
                            Margin="10,3,3,3"
                            HorizontalOptions="Start"
-                           VerticalTextAlignment="Center"/>
+                           />
                 </cm:ContextMenuContainer.Content>
             </cm:ContextMenuContainer>
 
@@ -50,6 +51,7 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
